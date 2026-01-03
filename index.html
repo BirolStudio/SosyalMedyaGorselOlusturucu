@@ -17,8 +17,8 @@
             min-height: 100vh;
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             display: flex;
-            align-items: center;
             justify-content: center;
+            padding: 40px 15px;
             color: #ffffff;
         }
 
@@ -34,60 +34,44 @@
 
         h1 {
             font-size: 2rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .version {
-            opacity: 0.8;
             margin-bottom: 25px;
-            font-size: 0.95rem;
+            font-weight: 600;
+            text-align: center;
         }
 
-        p {
-            line-height: 1.6;
+        .version-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 20px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.06);
+            margin-bottom: 15px;
+        }
+
+        .version-info {
+            font-size: 0.95rem;
             opacity: 0.9;
-            margin-bottom: 30px;
         }
 
         .download-btn {
-            display: inline-block;
-            padding: 14px 28px;
-            border-radius: 10px;
+            padding: 10px 18px;
+            border-radius: 8px;
             background: #4fd1c5;
             color: #0f2027;
             font-weight: 600;
             text-decoration: none;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            white-space: nowrap;
         }
 
         .download-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(79, 209, 197, 0.4);
-        }
-
-        .roadmap {
-            margin-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-            padding-top: 25px;
-        }
-
-        .roadmap h2 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-
-        .roadmap ul {
-            list-style: none;
-        }
-
-        .roadmap li {
-            margin-bottom: 10px;
-            opacity: 0.85;
+            box-shadow: 0 8px 20px rgba(79, 209, 197, 0.4);
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 35px;
             font-size: 0.85rem;
             opacity: 0.6;
             text-align: center;
@@ -98,8 +82,10 @@
                 padding: 25px;
             }
 
-            h1 {
-                font-size: 1.6rem;
+            .version-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
             }
         }
     </style>
@@ -108,24 +94,19 @@
 
 <div class="container">
     <h1>SMGO</h1>
-    <div class="version">Sosyal Medya Görsel Oluşturucu — V1</div>
 
-    <p>
-        SMGO, ürün ve içerik görsellerini hızlı ve tutarlı şekilde oluşturmak için
-        geliştirilmiş masaüstü tabanlı bir araçtır. Bu sürüm, temel şablon sistemi ve
-        manuel konfigürasyon yapısını içerir.
-    </p>
+    <div class="version-box">
+        <div class="version-info">
+            Sosyal Medya Görsel Oluşturucu — <strong>V1</strong>
+        </div>
+        <a class="download-btn" href="SMGO-V1.zip" download>İndir</a>
+    </div>
 
-    <a class="download-btn" href="SMGO-V1.zip" download>
-        SMGO V1’i İndir
-    </a>
-
-    <div class="roadmap">
-        <h2>Planlanan Sürümler</h2>
-        <ul>
-            <li>• V2: Gelişmiş şablon yönetimi</li>
-            <li>• V3: Otomatik veri çekme ve batch çıktı</li>
-        </ul>
+    <div class="version-box">
+        <div class="version-info">
+            Sosyal Medya Görsel Oluşturucu — <strong>V2</strong>
+        </div>
+        <a class="download-btn" href="SMGO-V2.zip" download>İndir</a>
     </div>
 
     <footer>
